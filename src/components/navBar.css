@@ -3,7 +3,7 @@
 nav {
     height: 80px;
     width: 100%;
-    background-color: darkorchid;
+    background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
     }
@@ -17,7 +17,7 @@ nav .leftSide {
 }
 
 nav .leftSide .links {
-    max-height: 80px;
+    max-height: 50px;
 }
 
 nav .leftSide button {

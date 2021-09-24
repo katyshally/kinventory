@@ -1,0 +1,30 @@
+* {
+    margin: 0;   
+    padding: 0;
+  }
+
+nav {
+    height: 80px;
+    width: 100%;
+    background-color: darkorchid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    }
+
+
+nav .leftSide {
+    flex:50%;
+}
+
+nav .leftSide .links {
+    max-height: 80px;
+}
+nav .leftSide .links a {
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+}
+
+nav .rightSide {
+    flex:50%;
+}

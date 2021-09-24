@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import classes from "./navBar.css";
-//import Button from "./Button";
-import App from '../App';
 import ReorderIcon from '@material-ui/icons/Reorder';
 
 

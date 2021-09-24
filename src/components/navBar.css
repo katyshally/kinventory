@@ -2,7 +2,7 @@
 
 nav {
     height: 80px;
-    width: 100%;
+    width: auto;
     background-color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
@@ -10,14 +10,15 @@ nav {
 
 
 nav .leftSide {
-    flex:50%;
     display: flex;
     justify-content: left;
     align-items: center;
+
 }
 
 nav .leftSide .links {
-    max-height: 50px;
+    max-height: 80px;
+    width: auto;
 }
 
 nav .leftSide button {
@@ -35,10 +36,13 @@ nav .leftSide .links a {
     font-size: 25px;
     margin-left: 15px;
 }
-
-nav .rightSide {
-    flex:50%;
+nav .leftSide .links a:hover {
+    text-decoration: underline;
+    color: darkorchid;
 }
+
+
+
 
 @media only screen and (max-width: 850px) {
     nav .leftSide .links a {
@@ -54,7 +58,7 @@ nav .rightSide {
     
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 650px) {
     nav .leftSide button {
         display: flex;
     }

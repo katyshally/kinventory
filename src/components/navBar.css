@@ -1,11 +1,13 @@
 
 
 nav {
-    height: 80px;
-    width: auto;
-    background-color: black;
+    height: 50px;
+    width: 100%;
+    background-color: #6d597a;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     display: flex;
+    box-shadow:  5px 3px #b56576;
+    margin-left: -13px;
     }
 
 
@@ -13,12 +15,15 @@ nav .leftSide {
     display: flex;
     justify-content: left;
     align-items: center;
+    padding: 0;
+    margin: 0;
+    
 
 }
 
 nav .leftSide .links {
-    max-height: 80px;
-    width: auto;
+    max-height: 50px;
+    
 }
 
 nav .leftSide button {
@@ -38,7 +43,7 @@ nav .leftSide .links a {
 }
 nav .leftSide .links a:hover {
     text-decoration: underline;
-    color: darkorchid;
+    color: #b56576;
 }
 
 

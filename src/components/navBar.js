@@ -11,7 +11,7 @@ const [showLinks, setShowLinks] = useState(false);
 
       <div className ="leftSide">
         <div className="links" id={showLinks ? "hidden" : ""}>
-        <a href="/home">Home</a>
+        <a href="/">Home</a>
         <a href="/list">List</a>
         <a href ="/topfive">Top 5</a>
         <a href ="/form">Form</a>

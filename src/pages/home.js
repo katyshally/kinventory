@@ -4,11 +4,16 @@ import classes from "./home.css";
 import App from '../App';
 
 
+
+
 function Home () {
     return(
         <main className = {classes.homepage}>
+            <h1>Want to bring your k-pop inventory to life?</h1>
+
+            <img src="https://img.buzzfeed.com/store-an-image-prod-us-east-1/iD77mYBz.png?output-format=jpg"></img>
             <p>
-            Info goes here. 
+            Looking for an exciting way to manage your albums? Look no further! Here you can store every album with information, even a review or description!
             </p>
         </main>
     )

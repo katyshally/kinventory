@@ -23,6 +23,7 @@ function List () {
         <h2>Album: {album.album}</h2>
         <p> Version: {album.version}</p>
         <p>Signed: {album.signed}</p>
+        <img src={`imgs/${album.image}`} alt ={album.album}/>
         
         </div> ))}
         </ul>       

@@ -1,0 +1,20 @@
+.container {
+	padding: 0 0 110px 0;
+}
+.album {
+	padding: 5px;
+	margin: 0 auto;
+	padding: 120px 0 0 0;
+	width: 500px;
+	max-width: 100%;
+	text-align: left;
+}
+
+.album img {
+	max-width: 100%;
+	height: auto;
+}
+
+.album h2 {
+	line-height: 50%;
+}

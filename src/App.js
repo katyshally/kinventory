@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import './App.css';
 import Navigation from './components/navBar'; 
 import Home from './pages/home';
@@ -10,6 +10,17 @@ import Top from './components/top';
 
 
 function App() {
+  const [staticAlbumData, setStaticAlbumData] = useState([]);
+
+  useEffect(() => {
+    fetch("https://api.jsonbin.io/b/617b7075aa02be1d44604f2c")
+      .then(response => response.json())
+      .then(data => { 
+        setStaticAlbumData(data);
+      })
+      .catch(err =>{ console.error(err => console.error(err))}); 
+    }, []);
+
   return (
     <div className="App">
     <Router>

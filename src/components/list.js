@@ -1,30 +1,34 @@
-import React, { useState } from 'react';
-
+import React, { useState, useContext, useEffect } from 'react';
+import AlbumList from './albumList';
 import App from '../App';
 import classes from './list.css'
 
+function List () {
+    const [album, setAlbum] = useState([]);
 
-
-const List = props => {
-    const { albumData } = props;
+    useEffect(() => {
+      fetch("https://api.jsonbin.io/b/617c50e79548541c29ca6cff/3")
+        .then(response => response.json())
+        .then(result => setAlbum(result))
+        .catch(err =>{ console.error(err => console.error(err))}); 
+      }, []);
     
     return (
-        <div className={classes.container}>
-            {albumData.map(album =>
-                <div className={classes.album} key={album.artist}  id={album.album}>
-                    <h2>{album.artist}</h2>
-                    <p>{album.album}</p>
-
-                    {/* <img src={`images/comics/${comic.image}`} 
-                    onError={(e)=>{e.target.onerror = null; 
-                    e.target.src="images/comics/not_released.png"}} 
-                    alt={comic.title} />  */}
-                    {/* Uses filler image when there's no matching image in the folder */}
-                </div>
-            )}
+        <div> <h1>Album List</h1>
+        <ul>
+        {album.map(album => (
+        <div className = "listContainer" key={album.id}> 
+        
+        <h1>{album.artist} </h1>
+        <h2>Album: {album.album}</h2>
+        <p> Version: {album.version}</p>
+        <p>Signed: {album.signed}</p>
+        
+        </div> ))}
+        </ul>       
             
         </div>
-    )
-};
+        )
+    };
 
 export default List;

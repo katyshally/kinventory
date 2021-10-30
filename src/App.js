@@ -1,4 +1,4 @@
-import React, { useState, useContext, useEffect } from 'react';
+import React from 'react';
 import './App.css';
 import Navigation from './components/navBar'; 
 import Home from './pages/home';

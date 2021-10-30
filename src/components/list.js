@@ -1,15 +1,13 @@
-import React, { useState, useContext, useEffect } from 'react';
-import AlbumList from './albumList';
-import App from '../App';
-import classes from './list.css'
+import React, { useState, useEffect } from 'react';
+import "./list.css";
 
 function List () {
     const [album, setAlbum] = useState([]);
 
     useEffect(() => {
-      fetch("https://api.jsonbin.io/b/617c50e79548541c29ca6cff/5")
+      fetch("https://api.jsonbin.io/b/617c50e79548541c29ca6cff/6")
         .then(response => response.json())
-        .then(result => setAlbum(result))
+        .then(result => setAlbum(result.top))
         .catch(err =>{ console.error(err => console.error(err))}); 
       }, []);
     

@@ -19,3 +19,38 @@
     font-size: 20px;
     margin-bottom: -20px;
 }
+
+.listContainer img {
+    max-width: 500px;
+    padding-top: 20px;
+}
+
+.imageContainer {
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+.centered {
+    /* position: absolute;
+    width: 500px;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); */
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 85%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    width: 500px; /* Set the width of the positioned div */
+}
+
+.centered p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}

@@ -7,7 +7,7 @@ function List () {
     useEffect(() => {
       fetch("https://api.jsonbin.io/b/617c50e79548541c29ca6cff/6")
         .then(response => response.json())
-        .then(result => setAlbum(result.top))
+        .then(result => setAlbum(result))
         .catch(err =>{ console.error(err => console.error(err))}); 
       }, []);
     
@@ -15,7 +15,7 @@ function List () {
         <div> <h1>Album List</h1>
         <ul>
         {album.map(album => (
-        <div className = "listContainer" key={album.id}> 
+        <div className = "listContainer" key={album}> 
         
         <h1>{album.artist} </h1>
         <h2>Album: {album.album}</h2>

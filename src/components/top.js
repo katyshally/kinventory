@@ -10,7 +10,7 @@ function Top () {
     useEffect(() => {
       fetch("https://api.jsonbin.io/b/617c50e79548541c29ca6cff/6")
         .then(response => response.json())
-        .then(result => setAlbum(result.slice(6,10)))
+        .then(result => setAlbum(result.slice(6,11)))
         .catch(err =>{ console.error(err => console.error(err))}); 
       }, []);
      

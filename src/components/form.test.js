@@ -10,3 +10,5 @@ describe('Form component', () => {
         const chooseElement = screen.getByText('Artist');
         expect(chooseElement).toBeInTheDocument();
     });
+});
+    
